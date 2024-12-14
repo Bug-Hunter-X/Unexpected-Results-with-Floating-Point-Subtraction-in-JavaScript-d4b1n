@@ -1,0 +1,5 @@
+This repository demonstrates a common, yet often overlooked, issue in JavaScript: the potential for unexpected results when performing subtraction with floating-point numbers.  The `bug.js` file contains code that showcases the problem, while `bugSolution.js` offers a potential solution using a small tolerance for comparison.
+
+The issue arises from the inherent limitations of representing floating-point numbers in binary format.  Small rounding errors can accumulate, leading to inaccuracies in calculations. This is particularly relevant in applications dealing with financial data or scientific computations where precision is critical.
+
+The solution explores a common approach to mitigate the issue: comparing floating-point numbers within a small tolerance rather than directly comparing for equality.
